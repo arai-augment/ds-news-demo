@@ -1,0 +1,9 @@
+title: ニュース更新のためし用サイト
+description: Claude × GitHub でニュースを更新する流れを試すためのサイト
+lang: ja
+timezone: Asia/Tokyo
+permalink: /news/:year/:month/:day/:title/
+markdown: kramdown
+exclude:
+  - README.md
+  - CLAUDE.md

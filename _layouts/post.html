@@ -1,0 +1,11 @@
+---
+layout: base
+---
+<article class="post">
+  <p class="meta"><span class="date">{{ page.date | date: "%Y.%m.%d" }}</span><span class="cat">{{ page.category_ja }}</span></p>
+  <h1>{{ page.title }}</h1>
+  {% if page.image %}<img class="eyecatch" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">{% endif %}
+  <p class="summary">{{ page.summary }}</p>
+  <div class="body">{{ content }}</div>
+  <p class="back"><a href="{{ '/dronesports/' | relative_url }}">← dronesports.jp 側のニュース一覧</a>　<a href="{{ '/rangle/' | relative_url }}">← rangle.jp 側のニュース一覧</a></p>
+</article>

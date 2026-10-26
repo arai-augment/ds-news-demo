@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<h1 class="pt">ニュース</h1>
+<p class="lead">{{ page.lead }}</p>
+<ul class="list">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
+      <span class="cat">{{ post.category_ja }}</span>
+      <span class="ttl">{{ post.title }}</span>
+    </a>
+  </li>
+{% endfor %}
+</ul>
